@@ -1,13 +1,91 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Roboto Mono", sans-serif;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 100px;
+  background-color: #f7f2e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: #edc84b;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  background-color: #edc84b;
+  padding: 1.2rem 2.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #e9bb24;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 40px;
+  border: 4px solid #e9bb24;
+}
+
+.card::after {
+  content: "";
+  display: block;
+}
+
+.users-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* align-items: center; */
+}
+
+.data {
+  text-align: center;
+}
+
+.data h3 {
+  color: #e9bb24;
+}
+
+.data a {
+  text-decoration: none;
+  color: #be9d2f;
+}
+
+.data a:hover {
+  color: #e9bb24;
+}
+
+.error {
+  color: #e9bb24;
+  margin: 100px;
+  text-align: center;
 }
